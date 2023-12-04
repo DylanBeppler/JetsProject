@@ -7,7 +7,7 @@ public class CargoJet extends Jet implements CargoCarrier {
 		super();
 	}
 
-	public CargoJet(String model, int speed, int range, int price, int loadCapacity) {
+	public CargoJet(String model, int speed, int range, double price, int loadCapacity) {
 		super(model, speed, range, price);
 		this.loadCapacity = loadCapacity;
 	}
@@ -21,7 +21,7 @@ public class CargoJet extends Jet implements CargoCarrier {
 	}
 
 	public void loadCargo() {
-		System.err.println("Load cargo!!");
+		System.out.println("Load cargo!!");
 	}
 
 }

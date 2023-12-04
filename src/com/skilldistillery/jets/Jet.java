@@ -4,22 +4,22 @@ public abstract class Jet {
 	private String model;
 	private int speed;
 	private int range;
-	private int price;
+	private double price;
 	private double skyTime;
 
 	public int fly() {
 		// prints out the jet details (model, speed, range, price)
 		// and the calculated amount of time the jet can fly until
 		// it runs out of fuel.
-		System.out.println("Jet Model: " + model + "Speed: " + speed + "Range: " + range + "Price: " + price);
+		System.out.println("Jet Model: " + model + " Speed: " + speed + " Range: " + range + " Price: " + price);
 		skyTime = range / speed;
 
-		System.out.println("The amount of time this jet could fly before fuel depletion is: " + skyTime);
-
+		System.out.println("The amount of time this jet could fly before fuel depletion is: " + skyTime + " hours.");
+		System.out.println("-------------------------------------------------------------------");
 		return 0;
 	}
 
-	public Jet(String model, int speed, int range, int price) {
+	public Jet(String model, int speed, int range, double price) {
 		super();
 		this.model = model;
 		this.speed = speed;
@@ -52,11 +52,11 @@ public abstract class Jet {
 		this.range = range;
 	}
 
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 

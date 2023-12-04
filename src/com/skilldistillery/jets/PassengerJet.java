@@ -7,10 +7,10 @@ public class PassengerJet extends Jet {
 		super();
 	}
 
-	public PassengerJet(int maxOccupant, String model, int speed, int range, int price) {
+	public PassengerJet(String model, int speed, int range, double price, int maxOccupantint) {
 		super(model, speed, range, price);
 		this.maxOccupant = maxOccupant;
-	
+
 	}
 
 }
