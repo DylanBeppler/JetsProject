@@ -169,7 +169,7 @@ public class JetsApplication {
 		listFleet();
 
 		int index = sc.nextInt();
-		airField.removeJet(index - 1); 
+		airField.removeJet(index - 1);
 	}
 
 	private Jet findFastestJet(ArrayList<Jet> fleet) {
