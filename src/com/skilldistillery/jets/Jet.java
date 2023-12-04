@@ -8,9 +8,6 @@ public abstract class Jet {
 	private double skyTime;
 
 	public int fly() {
-		// prints out the jet details (model, speed, range, price)
-		// and the calculated amount of time the jet can fly until
-		// it runs out of fuel.
 		System.out.println("Jet Model: " + model + " Speed: " + speed + " Range: " + range + " Price: " + price);
 		skyTime = range / speed;
 
